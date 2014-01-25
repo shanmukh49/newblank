@@ -1,0 +1,100 @@
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<%= javascript_include_tag "window_close_event" %>
+
+<%#= javascript_include_tag "copy_disabled" %>
+<%= simple_form_for(@question) do |f| %>
+  <% if @question.errors.any? %>
+    <div class="error_messages">
+      <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+      <ul>
+      <% @question.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <table class="table">
+<tr><td><div class="field">
+    <%= f.input :q1,label:"1.How information about the user's locale can be accessed?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q2,label:"2.What are the advantages of the code-behind feature?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q3,label:"3.Why do you use the App_Code folder in ASP.NET?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q4,label:"4.What is IIS? Why is it used?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q5,label:"5.What is tracing? Where is it used?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q6,label:"6.What is the difference between authentication and authorization?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q7,label:"7.What is ViewState?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q8,label:"8.Which method has been introduced in ASP.NET 4.0 to redirect a page permanently?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q9,label:"9.What is the difference between the Response.Write() and Response.Output.Write() methods?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q10,label:"10.How can you implement the postback property of an ASP.NET control?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q11,label:"11.Explain login controls?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q12,label:"12.What are the event handlers that can be included in the Global.asax file?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q13,label:"13.Make a list of all templates of the Repeater control?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q14,label:"14.Describe the complete lifecycle of a Web page?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q15,label:"15.What is a Cookie? Where is it used in ASP.NET?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q16,label:"16.What is State Management? How many ways are there to maintain a state in .NET?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q17,label:"17.What do you understand by aggregate dependency?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q18,label:"18.What are the major built-in objects in ASP.NET?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q19,label:"19.What is the appSettings Section in the web.config file?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q20,label:"20.What is Role-based security?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q21,label:"21.Explain the validation controls. How many validation controls in ASP.NET 4.0?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q22,label:"22.How many types of Cookies are available in ASP.NET?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q23,label:"23.What is the use of the <sessionState> tag in the web.config file?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q24,label:"24.What events are fired when a page loads?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+  <tr><td><div class="field">
+    <%= f.input :q25,label:"25.Write three common properties of all validation controls?",as: :text,:input_html => { :cols => 50, :rows => 5 } %>
+  </div></td></tr>
+    
+  <tr><td><div class="actions">
+    <%= f.submit "Submit Exam",class: "actual_logbtn"%>
+  </div></td></tr>
+</table>
+<% end %>
+
